@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Suez%20One:700|Suez%20One:400");
+
+.piecharts {
+  padding: 30px;
+  h4 {
+    color: #3a3a3a;
+    font-size: 20px;
+    font-family: "Suez One";
+    font-weight: 400;
+  }
+  p {
+    font-size: 15px;
+    color: #aaaaaa;
+  }
+
+  .chartWrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10px;
+    .dropDownList {
+      display: flex;
+      flex-direction: column;
+      
+      .age{
+        padding: 10px;
+        font-weight: bold;
+        min-width: 100px;
+        color: gray;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-bottom: 1px solid rgb(207, 207, 207);
+      }
+    }
+
+    .graphs {
+      display: flex;
+      width: 60%;
+      margin: 10px;
+      gap: 20px;
+      @media (max-width: 439px) {
+        flex-direction: column;
+      }
+
+      .graph {
+        min-width: 60px;
+      }
+    }
+  }
+}

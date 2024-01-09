@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Suez%20One:700|Suez%20One:400');
+.content-area-charts {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: 100%;
+  }
+}
+
+// bar chart  1
+.bar-chart {
+ 
+  background-color: var(--secondary-color);
+  padding: 16px 16px 6px 16px;
+  border-radius: 5px;
+  box-shadow: var(--light-shadow1);
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding: 12px;
+  }
+  @media (max-width: 468px) {
+   
+ margin-top: 20px;
+  }
+
+
+  .retirementDetails{
+    width: 100%;
+    .title{
+       margin: 10px;
+      p{
+        color: #7e70ff;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      h1{
+        font-size: 25px;
+        font-weight: 500;
+        color: #3a3a3a;
+        font-family: 'Suez One';
+      }
+    }
+
+    .goalsWrapper{
+      
+      display: flex;
+      margin: 30px 0 40px 0px;
+      gap: 35px;
+
+
+      @media (max-width: 468px) {
+   
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+  
+
+      .goal{
+        padding: 15px;
+        width: max-content;
+        gap: 10px;
+        border-bottom: 1px solid #7e70ff;
+       
+
+        h1{
+          font-size: 26px;
+          font-weight: 800;
+          color: #3a3a3a;
+        }
+        span{
+          font-size: 12px;
+          font-weight: 700;
+          color: gray;
+        }
+      }
+    }
+  }
+  .bar-chart-wrapper {
+    width: 100%;
+    height: 240px;
+
+    // recharts customization
+    .recharts-wrapper {
+      @media (max-width: 1400px) {
+        margin-left: -10px;
+      }
+    }
+  }
+
+  .bar-chart-info {
+    margin-bottom: 32px;
+  }
+
+  .bar-chart-title {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color-inverted);
+  }
+
+  .chart-info-data {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  .info-data-value {
+    color: var(--xl-text-color);
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .info-data-text {
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    color: var(--green-color);
+  }
+
+  // customization of recharts - bar chart
+  .recharts-default-legend {
+    position: absolute;
+    top: -90px;
+    right: 0;
+  }
+  .recharts-tooltip-label {
+    color: var(--text-color-inverted);
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+// progress chart
+.progress-bar {
+  padding: 16px;
+  height: 90vh;
+  border-radius: 5px;
+  box-shadow: var(--light-shadow1);
+  background: var(--secondary-color);
+
+  @media (max-width: 768px) {
+    padding: 12px;
+  }
+
+  @media (max-width: 1004px) {
+   margin-top: 30px;
+  }
+
+  .progress-bar-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color-inverted);
+    margin-bottom: 16px;
+  }
+  .bar-item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 6px;
+    margin-bottom: 8px;
+
+    .bar-item-info-name,
+    .bar-item-info-value {
+      color: var(--text-color-inverted);
+      font-weight: 600;
+    }
+  }
+  .progress-bar-list {
+    display: grid;
+    row-gap: 20px;
+  }
+
+  .bar-item-full {
+    width: 100%;
+    height: 10px;
+    border-radius: 100vh;
+    background-color: var(--chart-secondary-color);
+    position: relative;
+  }
+
+  .bar-item-filled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 100vh;
+    background-color: var(--chart-primary-color);
+  }
+
+  button{
+    background-color: #4934fe;
+    width: 100%;
+    padding: 16px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 40px;
+    color: rgb(243, 243, 243);
+  }
+
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: #796bff;
+  gap: 2px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.Otherlinks{
+  margin-top: 40px;
+  padding: 8px;
+  border-left: 1px solid #4934fe;
+
+  p{
+    font-size: 17px;
+    color: gray;
+    font-weight: 400;
+  }
+  a{
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    cursor: pointer;
+    
+  }
+ .desc{
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+ }
+ .learn{
+  color: #796bff;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+ }
+}
+}

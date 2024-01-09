@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Suez%20One:700|Suez%20One:400');
+
+.accountDetals{
+
+
+  @media (max-width: 751px) {
+    display: flex;
+    height: 60vh;
+    
+  }
+
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+
+    .profile{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+
+
+
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+      .personDetails{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+          h1{
+              font-weight: 500;
+              font-family: 'Suez One';
+              color: #3f3f3f;
+  
+          }
+          span{
+              font-size: 14px;
+              font-weight: normal;
+              color: gray;
+          }
+      }
+    }
+
+
+    .accountThings{
+      @media (max-width: 751px) {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        align-items: baseline;
+        
+
+        h4{
+          font-size: 10px;
+         
+        }
+
+        h1{
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 468px) {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+
+        .wrapperContributions{
+           display: flex;
+           gap: 30px;
+          
+         .contributions,.interest{
+
+          padding: 20px 0 20px 0;
+
+
+          h4{
+            font-size: 25px;
+            font-weight: 900;
+          }
+          span{
+            font-size: 15px;
+          }
+         }
+
+
+        }
+        
+      }
+
+     
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .wrapper{
+         display: flex;
+         flex-direction: column;
+         gap: 18px;
+
+         @media (max-width: 468px) {
+         .todayBal{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          
+          margin-top: 20px;
+        
+
+          h5{
+            font-size: 20px;
+            font-weight: 300;
+          }
+
+          h1{
+            font-size: 40px;
+            font-weight: 900;
+          }
+
+          span{
+            font-size: 16px;
+          }
+         }
+   
+          
+        }
+
+        .wrapperContributions{
+          display: flex;
+          gap: 10px;
+        }
+
+        }
+      .todayBal,.contributions,.interest{
+       
+         h4{
+            margin-bottom: 8px;
+            font-weight: bolder;
+            font-size: 20px;
+            color: #3a3a3a;
+            
+         }
+
+         h5{
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-family: 'Suez One';
+            color: #3a3a3a;
+
+
+         }
+
+        h1{
+            font-weight: bold;
+            color: #3a3a3a;
+
+
+            
+           
+        }
+
+        span{
+            color: gray;
+            font-size: 14px;
+        }
+      } 
+
+      .btn{
+        background-color: #4835fe;
+        padding: 10px;
+        width: 50%;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 14px 15px;
+        letter-spacing: 1px;
+
+        @media (max-width: 751px) {
+         display: none;
+        }
+        @media (max-width: 468px) {
+          display: flex;
+      
+   
+          
+        }
+      }
+
+      .recentTransactions{
+        
+
+        .widrawals{
+            padding: 15px 15px 20px 0px;
+            gap: 10px;
+            border-bottom: 1px solid rgb(218, 218, 218);
+            width: max-content;
+            .date{
+              color: gray;
+              font-size: 15px;
+              margin-bottom: 5px;      
+            }
+        }
+      }
+
+    }
+}
